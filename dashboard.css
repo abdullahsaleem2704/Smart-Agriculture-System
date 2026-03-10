@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: century-gothic, sans-serif;
+    background-color: rgb(229, 255, 195);
+}
+header{
+    background-color: rgb(19, 54, 21);
+    color: white;
+    height: 3.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header h1{
+    margin: auto;
+}
+header i{
+    margin-left: 2rem;
+}
+.weather{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+    margin-top: 2.6rem;
+}
+.weather-estimates{
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+    height: 100%;
+    justify-content: space-between;
+}
+.temperature{
+    width: 48%;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.temperature video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 2rem;
+}
+.temperature h2, .humidity h2, .rain h2{
+    margin-left: 1.4rem;
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    color: white;
+}
+.temp{
+   
+    position: relative;
+}
+.temperature h1, .humidity h1, .rain h1{
+    font-size: 2.6rem;
+    color: white;
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: 6rem;
+}
+.humidity{
+    width: 48%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: rgb(19, 54, 21);
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.rain{
+    width: 48%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: rgb(19, 54, 21);
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.dashboard-crops{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: auto;
+    height: 52vh;
+    margin-top: 1.2rem;
+    justify-content: space-evenly;
+}
+.add-crops{
+    width: 48%;
+    border-radius: 2rem;
+    background-color: rgb(19, 54, 21);
+    color: white;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.crops-input{
+display: flex;
+flex-direction: column;
+height: 80%;
+justify-content: space-evenly;
+width: 90%;
+margin: auto;
+}
+.crops-input input, .crops-input select{
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 2rem;
+    font-size: 1rem;
+}
+.crops-input input:focus, .crops-input select:focus{
+outline: none;
+background: transparent;
+}
+.crops-input label{
+    margin-top: 1rem;
+}
+.add-crops h1{
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+}
+#addBtn{
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: greenyellow;
+    border: none;
+    border-radius: .6rem;
+    height: 2rem;
+    /* width: 12rem; */
+    width: 40%;
+    font-size: .8rem;
+    font-weight: 600;
+}
+#removeBtn{
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 47, 47);
+    border: none;
+    border-radius: .6rem;
+    height: 2rem;
+    /* width: 12rem; */
+    width: 40%;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.crops-result{
+    width: 48%;
+    background-color: rgb(19, 54, 21);
+    border-radius: 2rem;
+    color: white;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.crops-result h1{
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+}
+.results{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1.2rem;
+    height: 30vh;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+.yield-estimates{
+    width: 48%;
+    border-radius: 2rem;
+    color: white;
+    background-color: rgb(19, 54, 21);
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.irrigation{
+    width: 48%;
+    color: white;
+    background-color: rgb(19, 54, 21);
+    border-radius: 2rem;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.625);
+}
+.yield-estimates h1, .irrigation h1{
+      margin-left: 2rem;
+    margin-top: 1.2rem;
+}
+.cropsList{
+    width: 90%;
+    margin: auto;
+}
+.cropsList p{
+    margin-top: .6rem;
+} 
+.yield{
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+}
+.yield-data{
+    margin-left: 20%;
+    margin-top: 2rem;
+}
+#wheatYieldEst, #riceYieldEst, #cottonYieldEst{
+    margin-left: 1rem;
+}
+footer{
+    height: 30vh;
+    background-color: rgb(19, 54, 21);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.copyright{
+    margin-bottom: -2rem;
+}
+#irrigation-data h2{
+    font-size: 1rem;
+    margin-left: 20%;
+    margin-top: .6rem;
+}
+@media screen and (max-width: 790px){
+    .weather{
+        flex-direction: column;
+        margin-top: 1.4rem;
+        width: 94%;
+    }
+    .temperature{
+        width: 100%;
+    }
+    .weather-estimates{
+        width: 100%;
+        height: 90%;
+        margin-top: 1rem;
+    }
+    .humidity h2,.rain h2{
+        font-size: 1.6rem;
+    }
+    .humidity h1, .rain h1{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .dashboard-crops{
+        display: flex;
+        height: 130vh;
+        margin-top: 8.4rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 94%;
+
+    }
+    .add-crops{
+        width: 100%;
+    }
+    #addBtn, #removeBtn{
+        height: 2.3rem;
+        margin-bottom: .1rem;
+    }
+    .crops-result{
+        height: 52%;
+        width: 100%;
+    }
+    .results{
+        width: 94%;
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+    .yield-estimates{
+        width: 100%;
+        height: 42%;
+    }
+    .yield-data{
+        margin-bottom: 2rem;
+    }
+    .yield-estimates h1, .irrigation h1{
+      margin-left: 1rem;
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+}
+.irrigation{
+    height: 46%;
+    width: 100%;
+}
+}

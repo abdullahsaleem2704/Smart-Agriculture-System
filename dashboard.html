@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Agriculture System</title>
+</head>
+<body>
+    <header>
+        <i class="fa fa-arrow-left" style="font-size:24px" onclick="location.href='index.html'"></i>
+        <h1>Dashboard</h1>
+    </header>
+    <div class="weather">
+        <div class="temperature">
+            <video autoplay muted loop>
+                <source src="images/weather.mp4">
+            </video>
+            <div class="temp">
+                <h2>Islamabad</h2>
+                <h1>21 C</h1>
+            </div>
+        </div>
+        <div class="weather-estimates">
+            <div class="humidity">
+                <h2>Humidity</h2>
+                <h1>60%</h1>
+            </div>
+            <div class="rain">
+                <h2>Rain</h2>
+                <h1>No</h1>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-crops">
+    <div class="add-crops">
+        <h1>Add Crops</h1>
+        <div class="crops-input">
+            <label for="">Crop Name</label>
+            <input type="text" placeholder="Enter crop name" id="cropName">
+            <label for="">Crop Type</label>
+            <select id="cropType">
+                <option value="">Select Crop</option>
+                <option value="Wheat">Wheat</option>
+                <option value="Rice">Rice</option>
+                <option value="Cotton">Cotton</option>
+            </select>
+            <label for="">Area (Acres)</label>
+            <input type="number" placeholder="Area in acres" id="cropArea">
+            <label for="">Sowing Date</label>
+            <input type="date" id="sowingDate">
+            <div class="crops-btn">
+            <button id="addBtn" onclick="addCrop();">Add</button>
+            <button id="removeBtn" onclick="removeCrop()">Delete Records</button>
+            </div>
+        </div>
+    </div>
+    <div class="crops-result">
+        <h1>Your Crops</h1>
+        <div class="cropsList" id="display">
+        </div>
+    </div>
+    </div>
+    <div class="results">
+        <div class="yield-estimates">
+            <h1>Yield Estimate</h1>
+            <div class="yield-data">
+                <div class="yield"><h2>Wheat: </h2><h2 id="wheatYieldEst">0Kg</h2></div>
+                <div class="yield"><h2>Rice: </h2><h2 id="riceYieldEst">0Kg</h2></div>
+                <div class="yield"><h2>Cotton: </h2><h2 id="cottonYieldEst">0Kg</h2></div>
+            </div>
+        </div>
+        <div class="irrigation">
+            <h1>Irrigation</h1>
+            <div id="irrigation-data">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>"Smart Agriculture System"</p>
+          <div class="copyright">
+        <p id="copyright">&copy; Copyright - 2025</p>
+        <p>All rights reserved</p>
+        </div>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
